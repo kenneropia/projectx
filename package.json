@@ -8,10 +8,10 @@
     "url": "https://twitter.com/Codehagen"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "contentlayer build && next build",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && contentlayer build && next build",
     "turbo": "next dev --turbo",
-    "start": "next start",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "preview": "next build && next start",
     "postinstall": "prisma generate",
